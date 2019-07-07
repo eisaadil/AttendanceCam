@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginStart="35dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/courseNameAndYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/studentFaceThumbnail"
+            android:layout_toEndOf="@+id/studentFaceThumbnail"
+            android:textColor="#D9000000"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            android:text="BTech Computer Science - Year 3"/>
+
+        <TextView
+            android:id="@+id/courseCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/studentName"
+            android:fontFamily="sans-serif"
+            android:textColor="#8C000000"
+            android:textSize="14sp"
+            android:layout_marginTop="1dip"
+            android:layout_toEndOf="@+id/studentFaceThumbnail"
+            android:text="CSE-4009" />
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/deleteCourseButton"
+        android:src="@drawable/minus"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        />
+</RelativeLayout>

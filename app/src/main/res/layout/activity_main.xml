@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/AppThemeWhiteAccent"
+    android:background="@drawable/green_gradient"
+    tools:context=".MainActivity"
+    android:layout_gravity="center">
+    <android.support.v7.widget.Toolbar
+        style="@style/ToolBarStyle.Event"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="@dimen/abc_action_bar_default_height_material" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AttendanceCam"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/toolbar_title"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-condensed"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="832dp"
+            android:layout_height="250dp"
+            android:src="@drawable/attendance_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="taking attendance has never been easier"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="14sp"
+            android:textColor="#fff"/>
+
+        <Button android:id="@+id/goToAppButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GO!"
+            android:background="@drawable/rounded_shape_button"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/colorPrimary"
+            android:paddingLeft="7dp"
+            android:paddingTop="7dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="9dp"
+            android:textSize="16sp"
+
+            />
+
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

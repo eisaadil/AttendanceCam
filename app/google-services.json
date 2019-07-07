@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "608730692331",
+    "firebase_url": "https://attendancecam.firebaseio.com",
+    "project_id": "attendancecam",
+    "storage_bucket": "attendancecam.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608730692331:android:a372119fce9c5f4a",
+        "android_client_info": {
+          "package_name": "com.eisaadil.attendancecam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "608730692331-uk9pqucapeaas0evkthiqbmrugljhpc7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCauwPUNCqwGbNRjReWZBXIZ9ffpfLL7tE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

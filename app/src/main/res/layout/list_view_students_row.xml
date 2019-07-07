@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip"
+    android:gravity="center_vertical">
+
+    <LinearLayout android:id="@+id/studentFaceThumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:paddingStart="16dp"
+        android:gravity="center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/studentFaceImage"
+            android:layout_width="47dip"
+            android:layout_height="47dip"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/studentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/studentFaceThumbnail"
+        android:layout_toEndOf="@+id/studentFaceThumbnail"
+        android:text="Eisa Adil"
+        android:layout_alignParentStart="true"
+
+        android:textColor="#D9000000"
+        android:fontFamily="sans-serif"
+        android:textSize="16sp"
+        android:paddingLeft="72dp"
+        android:paddingTop="5dp"/>
+
+    <TextView
+        android:id="@+id/studentRegNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/studentName"
+        android:layout_marginTop="1dip"
+        android:fontFamily="sans-serif"
+        android:textColor="#8C000000"
+        android:textSize="14sp"
+        android:layout_alignParentStart="true"
+        android:paddingStart="72dp"
+        android:text="1522009" />
+
+    <LinearLayout android:id="@+id/attendanceNumberLayout"
+        android:padding="3dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="50dip"
+        android:layout_height="50dip">
+
+        <TextView
+            android:id="@+id/attendanceText"
+            android:text="4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textColor="#D9000000"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/maxAttendanceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/30"
+            android:fontFamily="sans-serif"
+            android:textColor="#8C000000"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+</RelativeLayout>

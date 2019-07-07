@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        style="@style/ToolBarStyle.Event"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="@dimen/abc_action_bar_default_height_material" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Student"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title"
+                android:textColor="#fff"
+                android:textSize="26sp"
+                android:fontFamily="sans-serif-condensed"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_subtitle"
+                android:textColor="#fff"
+                android:textSize="10sp"
+                android:fontFamily="sans-serif-condensed"/>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        tools:context="com.eisaadil.attendancecam.AddStudent"
+        android:layout_marginTop="65dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/takenImageForStudent"
+            android:src="@drawable/circle_icon"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/ic_menu_rotate"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/rotate"
+            android:visibility="invisible"/>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/studentName"
+                android:hint="Student Name"
+                android:singleLine="true"
+                android:inputType="textCapWords"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_regNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/regNo"
+                android:hint="Registration Number"
+                android:singleLine="true"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button android:id="@+id/addStudent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Student"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="40dp"
+            android:textColor="@android:color/white"/>
+
+        <Button android:id="@+id/importByExcel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Import by Excel"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="40dp"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

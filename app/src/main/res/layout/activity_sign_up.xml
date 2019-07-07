@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_gradient"
+    android:theme="@style/AppThemeWhiteAccent">
+    <android.support.v7.widget.Toolbar
+        style="@style/ToolBarStyle.Event"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="@dimen/abc_action_bar_default_height_material"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textAllCaps="true"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        tools:context="com.eisaadil.attendancecam.SignUp"
+        android:layout_gravity="center"
+        >
+
+
+
+
+        <!--<Button-->
+            <!--android:layout_marginTop="40dp"-->
+            <!--android:id="@+id/goToApp"-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Go To App" />-->
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:hint="Email Address"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                android:textColor="#fff"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password1"
+                android:hint="Password"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:textColor="#fff"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_password2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password2"
+                android:hint="Repeat Password"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:textColor="#fff"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_fullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fullName"
+                android:hint="Full Name"
+                android:singleLine="true"
+                android:inputType="textCapWords"
+                android:textColor="#fff"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button android:id="@+id/signUp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:background="#fff"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/colorPrimary"
+            android:paddingLeft="3dp"
+            android:paddingTop="3dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="5dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/alreadyAccount"/>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eisaadil.attendancecam.TakeAttendance"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    <android.support.v7.widget.Toolbar
+        style="@style/ToolBarStyle.Event"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="@dimen/abc_action_bar_default_height_material" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Take Attendance"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title"
+                android:textColor="#fff"
+                android:textSize="26sp"
+                android:fontFamily="sans-serif-condensed"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click on the image to continuously take attendance. 10 at a time."
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_subtitle"
+                android:textColor="#fff"
+                android:textSize="10sp"
+                android:fontFamily="sans-serif-condensed"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_margin="2dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/takenImage"
+        android:src="@drawable/attendance_logo"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/resultText"/>
+    <ProgressBar
+        android:id="@+id/takeAttendanceProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:visibility="gone">
+    </ProgressBar>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/identifiedStudentsListView"
+        android:divider="#1A000000"
+        android:dividerHeight="1dp"/>
+
+</LinearLayout>
