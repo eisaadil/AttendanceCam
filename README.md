@@ -1,21 +1,20 @@
 # AttendanceCam Android Application (AI Project)
 
-Android app for taking group attendance in classroom using Face Recognition
+Android app for taking group attendance in a classroom using Face Recognition
 
 **Date:** 2nd March to 29th May 2018
 
 #### Screenshots and more details are on the PDF file here(AI%20Project%20AttendanceCam.pdf)
 
 ## Description: 
-Developed an Android App using Java, Spring Boot for back-end and Postgres for database storage. The website’s main features are authentication, posting, searching for profiles and chatting. The chatting module uses Web Sockets for real time data transfer between client and server side.
+Take a picture of the class, and using Face Recognition, all of their attendance gets stored automatically on the database!
 
 Tools used:
- * Android Studio
- * Firebase Console
+ * Android Studio (Java)
  * Flinto (for prototyping)
 Frameworks/Libraries used:
- * Firebase (for Authentication and Database)
- *  * Authentication
- *  * Database
+ * Google Firebase
+   * Authentication
+   * Database
  * Microsoft Cognitive Face API (Project Oxford)
  * Open CSV
