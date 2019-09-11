@@ -12,6 +12,7 @@ A teacher can take a group picture of the class, and the attendance of all prese
 **Tools used:**
  * Android Studio (Java)
  * Flinto (for prototyping)
+ 
 **Frameworks/Libraries used:**
  * Google Firebase
    * Authentication
