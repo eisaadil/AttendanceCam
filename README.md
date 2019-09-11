@@ -1,6 +1,6 @@
 # AttendanceCam Android Application (AI Project)
 
-Android app used by teachers for taking group attendance in a classroom using Facial Recognition. Makes use of Microsoft Face API for the AI and Google Firebase for data storage.
+App used by teachers for taking group attendance in a classroom using Facial Recognition. Makes use of Microsoft Face API for the AI and Google Firebase for data storage.
 
 **Date:** 2nd March to 29th May 2018
 
@@ -9,20 +9,20 @@ Android app used by teachers for taking group attendance in a classroom using Fa
 ## Description: 
 A teacher can take a group picture of the class, and the attendance of all present students gets stored automatically on the cloud! It really is that simple.
 
-Tools used:
+**Tools used:**
  * Android Studio (Java)
  * Flinto (for prototyping)
-Frameworks/Libraries used:
+**Frameworks/Libraries used:**
  * Google Firebase
    * Authentication
    * Database
  * Microsoft Cognitive Face API (Project Oxford)
  * Open CSV
  
-# Screenshots:
+## Screenshots:
 ### Welcome Screen
 ![AI Project AttendanceCam-1](https://user-images.githubusercontent.com/4246528/64739083-105ec880-d4bf-11e9-9e9c-69464ace0056.jpg)
-### Registration and Login
+### Registration and Login (with authentication)
 ![AI Project AttendanceCam-2](https://user-images.githubusercontent.com/4246528/64739084-105ec880-d4bf-11e9-949c-d318566cb123.jpg)
 ![AI Project AttendanceCam-3](https://user-images.githubusercontent.com/4246528/64739085-105ec880-d4bf-11e9-9329-7911d2de99f3.jpg)
 ### View Courses taught by teacher, Add Course or Delete Course
